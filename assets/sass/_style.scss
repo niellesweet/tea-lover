@@ -79,3 +79,13 @@
 	min-height: $height-regular;
 	@include background();
 }
+.eighth-section{
+	min-height: $height-big;
+}
+.ninth-section .caja-texto h3{
+	font-weight:700;
+}
+.ninth-section .caja-texto small{
+	font-weight:900;
+	font-style:bold;
+}
