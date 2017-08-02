@@ -1,11 +1,32 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:$font;
+}
 .first-section{
 	background-image: url(../img/fondo-bienvenida.jpg);
 	min-height: $height-regular;
+	@include background();
+}
+.first-section .logo-bienvenida{
+	margin-top:120px;
+}
+.second-section{
+	background-color: #000;
+}
+.second-section iframe{
+	width:100%; 
+	min-height: $height-big;
 }
 .third-section{
 	background-image: url(../img/fondo-about.jpg);
 	min-height: $height-regular;
 	@include background();
+	color: $color-titulo;
+} 
+.third-section h1{
+	@include font-style();
+	margin-top: 150px;
 }
 .tipos-te{
 	min-height: $height-small;
@@ -35,26 +56,40 @@
 	min-height: $height-small;
 	@include background();
 }
+.fourth-section .foto-grande h5{
+	margin-top: 300px;
+	color: $color-titulo;
+	font-weight: 700;
+}
+.fourth-section .foto-chica1 h5,
+.fourth-section .foto-chica2 h5,
+.fourth-section .foto-mediana h5{
+	color: $color-titulo;
+	margin-top: 150px;
+	font-weight: 700;
+}
 .fifth-section{
 	background-image: url(../img/disfruta.jpg);
 	min-height: $height-regular;
 	@include background();
+	color: $color-titulo;
 }
-.sixth-section .caja-texto1{
+.fifth-section h1{
+	@include font-style();
+		margin-top:200px;
+}
+.sixth-section .caja-texto{
 	min-height:$height-regular;
+}
+.sixth-section .caja-texto h2{
+	margin-top: 80px;
 }
 .sixth-section .caja-imagen1{
 	background-color: $color-beige;
 	min-height:$height-regular;
 }
-.sixth-section .caja-texto2{
-	min-height: $height-regular;
-}
 .sixth-section .caja-imagen2{
 	background-color: $color-verde;
-	min-height: $height-regular;
-}
-.sixth-section .caja-texto3{
 	min-height: $height-regular;
 }
 .sixth-section .caja-imagen3{
@@ -63,24 +98,30 @@
 }
 .sixth-section
 .verde-vacio-movil{
-	min-height: $height_xsmall;
+	min-height: $height-xsmall;
 	background-color: $color-verde;
 }
 .beige-vacio-movil{
-	min-height: $height_xsmall;
+	min-height: $height-xsmall;
 	background-color: $color-beige;
 }
 .rosa-vacio-movil{
-	min-height:$height_xsmall;
+	min-height:$height-xsmall;
 	background-color: $color-rosado;
 }
 .seventh-section{
 	background-image: url(../img/parallax-4.jpg);
 	min-height: $height-regular;
 	@include background();
+	color:$color-titulo;
+}
+.seventh-section h1{
+	@include font-style();
+	margin-top:250px;
 }
 .eighth-section{
 	min-height: $height-big;
+	width:100%;
 }
 .ninth-section .caja-texto h3{
 	font-weight:700;
@@ -88,4 +129,8 @@
 .ninth-section .caja-texto small{
 	font-weight:900;
 	font-style:bold;
+}
+footer{
+	min-height: $height-xsmall;
+	background-color:#414143;
 }
