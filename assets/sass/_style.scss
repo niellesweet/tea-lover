@@ -96,7 +96,9 @@
 	background-color: $color-rosado;
 	min-height: $height-regular;
 }
-.sixth-section
+.sixth-section .tea-mug{
+	@include margin();
+}
 .verde-vacio-movil{
 	min-height: $height-xsmall;
 	background-color: $color-verde;
@@ -133,4 +135,8 @@
 footer{
 	min-height: $height-xsmall;
 	background-color:#414143;
+	color: $color-titulo;
+}
+footer p{
+	margin-top:25px;
 }
